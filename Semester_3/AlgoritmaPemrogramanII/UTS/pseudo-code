@@ -1,0 +1,19 @@
+program_menghitung_luas_segitiga
+
+begin
+    deklarasi:
+    # Deklarasi Variabel
+    Integer Alas, Tinggi
+    Decimal Luas
+
+    algoritma:
+    # Proses input
+    Masukan Alas
+    Masukan Tinggi
+
+    # Proses Perhitungan Luas Segitiga
+    Luas = (1/2) * Alas * Tinggi
+
+    # Mengeluarkan Nilai Luas
+    Tampilkan Luas
+end

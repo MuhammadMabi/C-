@@ -3,23 +3,15 @@ using namespace std;
 
 int main()
 {
-    std::string kamu;
-    cout << "Input :";
-    cin >> kamu;
-    cout << "Kamu " << kamu << endl;
-}
+    int arrayDuaDimensi[3][2] = {{1, 2}, {3, 4}, {5, 6}};
 
-#include <stdio.h>
+    for (int i = 0; i < 3; ++i)
+    {
+        for (int j = 0; j < 2; ++j)
+        {
+            cout << "Elemen ke-[" << i << "][" << j << "]: " << arrayDuaDimensi[i][j] << endl;
+        }
+    }
 
-int main()
-{
-    int panjang, lebar, luas, keliling;
-    printf("Masukkan panjang :");
-    scanf("%d", &panjang);
-    printf("Masukkan lebar :");
-    scanf("%d", &lebar);
-    luas = panjang * lebar;
-    keliling = 2 * (panjang + lebar);
-    printf("Jadi luasnya adalah : %d\n", luas);
-    printf("Jadi kelilingnya adalah : %d\n", keliling);
+    return 0;
 }
